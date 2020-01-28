@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    table.table
+        thead.thead-dark
+            tr
+                th #
+                th username
+                th score
+        tbody
+            if users
+                each user, i in users
+                    tr
+                        th #{i + 1}
+                        th #{user.username}
+                        th #{user.maxScore}

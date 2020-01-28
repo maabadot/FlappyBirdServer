@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    if !user
+        div.messages
+            br
+            div.alert.alert-info To save your progress in leaderboard, you need to log in!
+    canvas(id='mycanvas' width='320' height='480')
